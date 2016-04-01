@@ -6,7 +6,7 @@ var express = require('express'),
 
 app.get('/', function(req, res){
     console.log('Request body');
-    console.log(req.body);
+    console.log(req.header('key'));
     res.send({message:"yo that's dope"});
 });
 
